@@ -8,7 +8,9 @@
 
  [I. Hướng dẫn sử dụng](#HDSD)
  [II. Tính năng](#Tinhnang)
-
+ [III. Tác giả](#Tacgia)
+ [IV. Người hướng dẫn](#Nguoihuongdan)
+ [V. Tổng kết](#Tongket)
 
 
 <!-- HDSD -->
