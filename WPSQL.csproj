@@ -92,7 +92,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\chayscript.png" />
+    <Content Include="Images\chonserver.png" />
+    <Content Include="Images\clickAppconfig.png" />
+    <Content Include="Images\ExecuteScript.png" />
+    <Content Include="Images\PasteServer.png" />
     <Content Include="script.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
