@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPSQL", "WPSQL.csproj", "{CF4D040A-46F5-42EC-8F3D-5560A935BFB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF4D040A-46F5-42EC-8F3D-5560A935BFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4D040A-46F5-42EC-8F3D-5560A935BFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4D040A-46F5-42EC-8F3D-5560A935BFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4D040A-46F5-42EC-8F3D-5560A935BFB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C119147F-3A24-476D-B3BD-F0B1D8CF423B}
+	EndGlobalSection
+EndGlobal
