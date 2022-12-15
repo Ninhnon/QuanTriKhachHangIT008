@@ -21,42 +21,35 @@
 <div id="HDSD"></div>
 
 ## I. Hướng dẫn sử dụng
-Kinh tế ngày càng phát triển, áp lực công việc cũng ngày càng lớn kéo theo nhu cầu giải trí của con người cũng ngày càng tăng lên, trong đó xem phim là hình thức được nhiều người lựa chọn. Điều này là một tiềm năng phát triển rất lớn và được nhiều công ty khai thác. Một vấn đề lớn được đặt ra là việc quản lý các rạp phim sao cho hiệu quả, chính xác, tránh được rủi ro không nên có. Hiểu được điều này, nhóm quyết định xây dựng một ứng dụng hỗ trợ các rạp chiếu phim trong việc quản lý, tận dụng những công nghệ tiên tiến để phát triển, mục tiêu hướng đến chính là nâng cao trải nghiệm người dùng về cả giao diện lẫn tốc độ xử lý, kèm theo đó là những tính năng mở rộng phù hợp với thực tiễn.
-<!-- LOGO CINEMA -->
-![Logo Cinema](./Images/chayscript.png)
+Đầu tiên, bạn tìm trong source file [script.sql](), mở file trong Microsoft SQL Server Management Studio.
+![Chay script](./Images/chayscript.png)
 
-![Logo Cinema](./Images/chayscript.png)
+Sau đó trong giao diện kết nối bạn chọn server bạn muốn lưu trữ dữ liệu, Chú ý lưu tên server lại. Ví dụ ở đây ta lưu tên server : LAPTOP-O791JS0J\SQLEXPRESS.
 
-![Logo Cinema](./Images/chayscript.png)
+![Chon server](./Images/chonserver.png)
 
-![Logo Cinema](./Images/chayscript.png)
+Sau khi đã mở được file bạn click chuột vào nội dung của file khi đó bạn chạy bằng cách chọn vào button "Execute" (Hoặc nhấn F5 trên bàn phím).
 
-![Logo Cinema](./Images/chayscript.png)
+![Execute Script](./Images/ExecuteScript.png)
+
+Quay lại folder chứa dự án, Bạn mở file [WPSQL.sln]() sau đó trong phần Solution Explorer bạn tìm file [App.config]() mở file trong hình và tìm dòng trong hình.
+
+![Click Appconfig](./Images/ClickAppconfig.png)
+
+Bây giờ bạn chỉ cần thay đổi nội dung ở phần Data Source với tên server SQL bạn đã lưu.
+
+![Paste Server](./Images/PasteServer.png)
 <!-- Tính năng -->
 <div id="Tinhnang"></div>
 
 ## II. Tính năng
-* Quản lý đăng nhập, hỗ trợ việc khôi phục tài khoản cho người dùng khi quên mật khẩu.
 
-* Với vai trò quản lý (admin):
-  * Quản lý suất chiếu phim
-  * Quản lý suất chiếu phim
-  * Quản lý phim
-  * Quản lý sản phẩm
-  * Quản lý nhân sự
-  * Quản lý khách hàng
-  * Thống kê
-  * Quản lý lịch sử hàng hoá
-  * Quản lý voucher khách hàng
-  * Tiếp nhận và xử lý sự cố trang thiết bị
+* Hiển thị danh sách khách hàng(MSKH, Họ và tên, Ngày sinh, Ngày đăng ký)
+* Chọn để hiển thị thông tin khách hàng
+* Chỉnh sửa các thông tin khách hàng(ngoại trừ MSKH)
+* Thêm khách hàng
+* Xóa khách hang
 
-* Với vai trò nhân viên:
-  * Xem thông tin chi tiết của các suất chiếu, cho phép chọn suất chiếu.
-  * Xem sơ đồ ghế của phòng chiếu, thông tin chi tiết của ghế, cho phép chọn ghế.
-  * Xem thông tin những sản phẩm bán kèm đang được bán tại rạp, cho phép đặt kèm theo vé hoặc mua riêng theo nhu cầu khách hàng.
-  * Cho phép nhập thông tin khách mua hàng, thanh toán và in hoá đơn sản phẩm.
-  * Thêm, huỷ, cập nhật thông tin sự cố các thiết bị phòng chiếu.
- 
 
 <!-- TÁC GIẢ -->
 <div id="Tacgia"></div>
@@ -75,6 +68,8 @@ Kinh tế ngày càng phát triển, áp lực công việc cũng ngày càng l�
 <div id="Tongket"></div>
 
 ## V. Tổng kết
+Đây là bài tập: SQL(Quản trị khách hàng) cơ bản của mình nên có gì thiếu sót và đóng góp ý kiến, mong các bạn có thể trao đổi với mình qua mail: [21521252@gm.uit.edu.vn]()
+
 
 Cảm ơn bạn đã quan tâm!
 
