@@ -49,8 +49,8 @@ namespace WPSQL
                 dataGridView1.Rows.RemoveAt(index);
                 Database.DeleteKH(txtMSKH.Text);
             }
-            //if (index == dataGridView1.Rows.Count - 1)
-            //    index--;
+            if (index == dataGridView1.Rows.Count - 1)
+               index--;
             if (dataGridView1.Rows.Count > 1)
             {
                 DataGridViewRow gdvRow = dataGridView1.Rows[index];
@@ -58,6 +58,11 @@ namespace WPSQL
                 txtname.Text = gdvRow.Cells[1].Value.ToString();
                 tp_BirthDay.Value = DateTime.Parse(gdvRow.Cells[2].Value.ToString());
                 tp_RegisterDay.Value = DateTime.Parse(gdvRow.Cells[3].Value.ToString());
+            }
+            else if (dataGridView1.Rows.Count == 1)
+            {
+                txtMSKH.Text = String.Empty;
+                txtname.Text = String.Empty;
             }
         }
         public void FetchData()

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace WPSQL
 {
@@ -21,25 +16,34 @@ namespace WPSQL
         static readonly string updateKH = "update DanhSachKhachHang set Name = N'{0}', BirthDay = N'{1}', NGDK = N'{2}' where MSKH = N'{3}'";
         public static List<KhachHang> FetchingKhachHangData()
         {
-            sqlCon.Open();
-            var cmd = new SqlCommand(queryData, sqlCon);
-
             List<KhachHang> ds = new List<KhachHang>();
 
-            SqlDataReader read = cmd.ExecuteReader();
-            while (read.Read())
+            try
             {
-                ds.Add(new KhachHang()
-                {
-                    MSKH=read.GetString(0),
-                    Name=read.GetString(1),
-                    BirthDate=read.GetDateTime(2),
-                    RegisterDate=read.GetDateTime(3),
-                });
+                sqlCon.Open();
+                var cmd = new SqlCommand(queryData, sqlCon);
 
+
+                SqlDataReader read = cmd.ExecuteReader();
+                while (read.Read())
+                {
+                    ds.Add(new KhachHang()
+                    {
+                        MSKH = read.GetString(0),
+                        Name = read.GetString(1),
+                        BirthDate = read.GetDateTime(2),
+                        RegisterDate = read.GetDateTime(3),
+                    });
+
+                }
+                read.Close();
+                sqlCon.Close();
+                
             }
-            read.Close();
-            sqlCon.Close();
+            catch
+            {
+                MessageBox.Show("Lỗi kết nối dữ liệu. Vui lòng kiểm tra lại hướng dẫn sử dụng!!!");
+            }
             return ds;
         }
         public static void InsertKH(KhachHang khachHang)
