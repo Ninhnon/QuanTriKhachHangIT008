@@ -18,15 +18,7 @@ namespace WPSQL
         static readonly string queryData = @"select * from DanhSachKhachHang";
         static readonly string deleteKH = "delete from DanhSachKhachHang where MSKH='{0}'";
         static readonly string insertKH = "insert into DanhSachKhachHang values( N'{0}',N'{1}',N'{2}',N'{3}')";
-        public static void DeleteKH(string MSKH)
-        {
-            sqlCon.Open();
-            var strCmd = string.Format(deleteKH, MSKH);
-            SqlCommand cmd = new SqlCommand(strCmd, sqlCon);
-            cmd.ExecuteNonQuery();
-            cmd.Dispose();
-            sqlCon.Close();
-        }
+        static readonly string updateKH = "update DanhSachKhachHang set Name = N'{0}', BirthDay = N'{1}', NGDK = N'{2}' where MSKH = N'{3}'";
         public static List<KhachHang> FetchingKhachHangData()
         {
             sqlCon.Open();
@@ -78,6 +70,24 @@ namespace WPSQL
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
             }
+            sqlCon.Close();
+        }
+        public static void UpdateKH(KhachHang khachHang)
+        {
+            sqlCon.Open();
+            var strCmd = string.Format(updateKH, khachHang.Name, khachHang.BirthDate, khachHang.RegisterDate, khachHang.MSKH);
+            var cmd = new SqlCommand(strCmd, sqlCon);
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            sqlCon.Close();
+        }
+        public static void DeleteKH(string MSKH)
+        {
+            sqlCon.Open();
+            var strCmd = string.Format(deleteKH, MSKH);
+            SqlCommand cmd = new SqlCommand(strCmd, sqlCon);
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
             sqlCon.Close();
         }
     }

@@ -49,7 +49,7 @@ namespace WPSQL
             }
             if (!isValid) return;
 
-            if (NGDK.Value <= NGSinh.Value)
+            if (NGDK.Value < NGSinh.Value)
             {
                 DateError.Text = "Ngày sinh phải nhỏ hơn ngày đăng ký";
                 NGDKError.Text = "Ngày đăng ký phải lớn hơn ngày sinh";
