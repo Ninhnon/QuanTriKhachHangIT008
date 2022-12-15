@@ -34,7 +34,7 @@ Sau khi đã mở được file bạn click chuột vào nội dung của file k
 
 Quay lại folder chứa dự án, Bạn mở file [WPSQL.sln]() sau đó trong phần Solution Explorer bạn tìm file [App.config]() mở file trong hình và tìm dòng trong hình.
 
-![Click Appconfig](./Images/ClickAppconfig.png)
+![Click Appconfig](./Images/clickAppconfig.png)
 
 Bây giờ bạn chỉ cần thay đổi nội dung ở phần Data Source với tên server SQL bạn đã lưu.
 
