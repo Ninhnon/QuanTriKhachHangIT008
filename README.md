@@ -2,6 +2,7 @@
 
 # SQL(Quản trị khách hàng)
  IT008.N12
+
  Nguyễn Trọng Ninh - 21521252
 
 ## Mục lục
@@ -22,6 +23,7 @@
 
 ## I. Hướng dẫn sử dụng
 Đầu tiên, bạn tìm trong source file [script.sql](), mở file trong Microsoft SQL Server Management Studio.
+
 ![Chay script](./Images/chayscript.png)
 
 Sau đó trong giao diện kết nối bạn chọn server bạn muốn lưu trữ dữ liệu, Chú ý lưu tên server lại. Ví dụ ở đây ta lưu tên server : LAPTOP-O791JS0J\SQLEXPRESS.
@@ -32,7 +34,7 @@ Sau khi đã mở được file bạn click chuột vào nội dung của file k
 
 ![Execute Script](./Images/ExecuteScript.png)
 
-Quay lại folder chứa dự án, Bạn mở file [WPSQL.sln]() sau đó trong phần Solution Explorer bạn tìm file [App.config]() mở file trong hình và tìm dòng trong hình.
+Quay lại folder chứa dự án, Bạn mở file [WPSQL.sln]() sau đó trong phần Solution Explorer bạn tìm file [App.config]() mở file trong hình.
 
 ![Click Appconfig](./Images/clickAppconfig.png)
 
